@@ -1,4 +1,53 @@
+:root {
+    --dividers: #313234;
+    --bg: #242426;
+}
 hr {
     margin: 0;
 }
 /* reduce space above and below horizontal line  */
+
+ /* label{
+    font-size: 0.86rem;
+} */
+.majorFormat {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+}
+.title { 
+    grid-area: 1 / 1 / 1 / 6; 
+    padding-left: 2rem;
+}
+.sidebar { 
+    grid-area: 2 / 1 / 11 / 2; 
+    /* vertical start/horizontal start/vertical end/horizontal end */
+    padding-left: 2rem;
+    border-right:.1rem solid var( --dividers);
+    border-top:.1rem solid var( --dividers);
+    /* background-color: var(--accent-bg); */
+}
+.main{
+    grid-area: 2 / 2 / 11 / 6; 
+    padding-right: 1rem;
+    border-top:.1rem solid var( --dividers);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 1rem;
+    gap: 1.5rem 1.5rem;
+    padding-bottom: 10rem;
+    justify-items: center;
+}
+
+.equ{
+    border: .15rem solid #353434;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    padding: .5rem;
+    border-radius: 1rem;
+    background-color: var(--accent-bg);
+    box-sizing:border-box;
+}

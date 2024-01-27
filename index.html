@@ -5,20 +5,61 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
         <link rel="stylesheet" href="other/modnorm.min.css">
-        <link rel="stylesheet" href="vanilla.css">
+        <link rel="stylesheet" href="simple.css">
         <link rel="stylesheet" href="style.css">
         <script src="JavaScript/main.js"></script>
     </head>
-    <body>
-      <h1>Equation Libary</h1>
-      <!-- <span>About</span> --> 
-      <hr class="solid">
-      <p><b>Subject</b></p>
-      <p>Thermodynamics</p>
-      <p>Fluid Mechanics</p>
-      <p><b>Variables</b></p>
-      <p>Acceleration</p>
-      <p>Time</p>
+    <body class="majorFormat">
+      <div class="title">
+        <h4>Equation Index</h4>
+      </div>
+      <div class="sidebar">
+        <h5>Subject</h5>
+        <div>
+          <input type="checkbox" id="thermodynamics">
+          <label for="thermodynamics">Thermodynamics</label><br>
+          <input type="checkbox" id="fluidMechanics">
+          <label for="fluidMechanics">Fluid Mechanics</label><br>
+        </div>
+        <h5>Variables</h5>
+        <div>
+          <input type="checkbox" id="velocity">
+          <label for="velocity">Velocity</label><br>
+          <input type="checkbox" id="time">
+          <label for="time">Time</label><br>
+        </div>
+      </div>
+      <div class="main">
+        <div class="equ">
+          <span>Equ of line</span>
+          <h3>y=mx+b</h3><br>
+          <span>m=mass</span>
+        </div>
+        <div class="equ">
+          <span>Equ of line</span>
+          <h3>y=mx+b</h3><br>
+          <span>m=mass</span>
+        </div>
+        <div class="equ">
+          <span>Equ of line</span>
+          <h3>y=mx+b</h3><br>
+          <span>m=mass</span>
+        </div>
+        <div class="equ">
+        </div>
+        <div class="equ">
+        </div>
+        <div class="equ">
+        </div>
+        <div class="equ">
+        </div>
+        <div class="equ">
+        </div>
+        <div class="equ">
+        </div>
+        <div class="equ">
+        </div>
+      </div>
       <!-- need to find a way to display equations properly, jqMath seems promising-->
     </body>
 </html>
