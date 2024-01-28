@@ -65,8 +65,7 @@ h4 {
     padding: 0%;
 }
 input[type=text] {
-    border-color: var( --dividers);
     width: 14rem;
     border-radius: .7rem;
-    /* border: 10px; */
+    border: .15rem solid var( --dividers);
 }
