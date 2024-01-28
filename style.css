@@ -20,7 +20,7 @@ video {
 .majorFormat {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(10, 1fr);
+    grid-template-rows: repeat(7, 1fr);
 }
 .title { 
     grid-area: 1 / 1 / 1 / 6; 
@@ -28,7 +28,7 @@ video {
     color: var( --accent);
 }
 .sidebar { 
-    grid-area: 2 / 1 / 11 / 2; 
+    grid-area: 2 / 1 / 8 / 2; 
     /* vertical start/horizontal start/vertical end/horizontal end */
     padding-left: 2rem;
     border-right:.1rem solid var( --dividers);
@@ -38,7 +38,7 @@ video {
 }
 /* equ grid below */
 .main{
-    grid-area: 2 / 2 / 11 / 6; 
+    grid-area: 2 / 2 / 8 / 6; 
     padding-right: 1rem;
     border-top:.15rem solid var( --dividers);
     display: grid;
@@ -47,6 +47,8 @@ video {
     gap: .75rem .75rem;
     padding-bottom: 10rem;
     /* justify-items: center; */
+    /* overflow: auto; Dosent work  */
+    /* should make this section scrollable */
 }
 
 .equ {
@@ -69,3 +71,9 @@ input[type=text] {
     border-radius: .7rem;
     border: .15rem solid var( --dividers);
 }
+input[type="text"]:focus {
+    outline: none;
+}
+/* input[type="checkbox"] {
+    cursor: pointer;
+} did not work */
