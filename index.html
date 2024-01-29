@@ -7,7 +7,8 @@
         <link rel="stylesheet" href="other/modnorm.min.css">
         <link rel="stylesheet" href="simple.css">
         <link rel="stylesheet" href="style.css">
-        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <!-- <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script> -->
+        <!-- seems to work without this part, i think it came with teh MathJax script -->
         <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
         <script src="main.js"></script>
     </head>
@@ -17,11 +18,13 @@
       </div>
       <div class="sidebar">
         <br>
-        <input type="text" placeholder="Search">
+        <input type="text" placeholder="Search"><br>
+        <input type="checkbox" id="filtersearch">
+        <label for="filtersearch">Filter Search</label>
         <h5>Subjects</h5>
         <div>
           <input type="checkbox" id="thermodynamics">
-          <label for="thermodynamics">Algebra</label><br>
+          <label for="thermodynamics">Thermodynamics</label><br>
           <input type="checkbox" id="fluidMechanics">
           <label for="fluidMechanics">Fluid Mechanics</label><br>
         </div>
@@ -45,6 +48,7 @@
         <div class="equ">
           <span>Pressure-Volume Work</span>
           <h4>$$W=-P \nabla V$$</h4>
+          <!-- <span>$$W$$ = Work</span> -->
           <span>W = Work</span>
           <span>P = Pressure</span>
           <span>V = Volume</span>
@@ -54,6 +58,5 @@
           <h4>$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}$$</h4>
           <span>x	=	Unknown</span>
           <span>a, b, c	=	Constant</span>
-      <!-- need to find a way to display equations properly, jqMath seems promising-->
     </body>
 </html>
