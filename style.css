@@ -26,6 +26,9 @@ video {
     grid-area: 1 / 1 / 1 / 6; 
     padding-left: 2rem;
     color: var( --accent);
+    border: 0;
+    margin: 0;
+    max-height: 5rem;
 }
 .sidebar { 
     grid-area: 2 / 1 / 8 / 2; 
@@ -34,6 +37,7 @@ video {
     border-right:.1rem solid var( --dividers);
     border-top:.1rem solid var( --dividers);
     border-radius: 0 .7rem 0 0;
+    min-width: 14rem;
     /* background-color: var(--accent-bg); */
 }
 /* equ grid below */
@@ -56,19 +60,20 @@ video {
     position: relative;
     display: grid;
     justify-content: center;
-    height: 100%;
+    height: 25rem;
     width: 100%;
     padding: .5rem;
     /* border-radius: .7rem; */
     background-color: var(--accent-bg);
     box-sizing:border-box;
     /* float: left; */
+    min-width: 20rem;
 }
 h4 {
     padding: 0%;
 }
 input[type=text] {
-    width: 14rem;
+    width: 87%;
     border-radius: .7rem;
     border: .15rem solid var( --dividers);
 }
@@ -78,3 +83,24 @@ input[type="text"]:focus {
 /* input[type="checkbox"] {
     cursor: pointer;
 } did not work */
+@media screen and (max-width: 1280px){
+    .main{
+        grid-template-columns: repeat(2, 1fr);
+   }
+}
+@media screen and (max-width: 902px){
+    .sidebar{
+        display:none;
+   }
+   .main{
+        grid-area: 2 / 1 / 8 / 6; 
+   }
+}
+@media screen and (max-width: 660px){
+    .sidebar{
+        display:none;
+   }
+   .main{
+        grid-template-columns: repeat(1, 1fr);
+   }
+}
