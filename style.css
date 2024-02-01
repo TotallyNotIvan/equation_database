@@ -83,12 +83,17 @@ input[type="text"]:focus {
 /* input[type="checkbox"] {
     cursor: pointer;
 } did not work */
+@media screen and (min-width: 900px){
+    .minSearch{
+        display: none;
+    }
+}
 @media screen and (max-width: 1280px){
     .main{
         grid-template-columns: repeat(2, 1fr);
    }
 }
-@media screen and (max-width: 902px){
+@media screen and (max-width: 900px){
     .sidebar{
         display:none;
    }
