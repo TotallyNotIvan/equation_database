@@ -86,6 +86,12 @@ input[type="text"]:focus {
 .title label{
     color: var(--text);
 }
+.moblieCheckboxSpacer {
+    display: flex;
+    margin-right: 14%;
+    justify-content: space-between;
+    font-size: 90%;
+}
 @media screen and (min-width: 900px){
     .minTools{
         display: none;
@@ -99,9 +105,6 @@ input[type="text"]:focus {
 @media screen and (max-width: 1280px){
     .main{
         grid-template-columns: repeat(2, 1fr);
-   }
-   input[type=text] {
-    width: 95%;
    }
    /* .title input[type=text] {
     border-top:.15rem solid var( --dividers);
@@ -124,9 +127,9 @@ input[type="text"]:focus {
         grid-template-columns: repeat(1, 1fr);
    }
 }
-.moblieCheckboxSpacer {
-    display: flex;
-    margin-right: 5%;
-    justify-content: space-between;
+@media screen and (max-width: 430px){
+   .moblieCheckboxSpacer {
+        font-size: 55%;
+   }
 }
 /* makes it so the chcekboxes under the moblie search is spread out */
