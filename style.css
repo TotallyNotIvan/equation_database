@@ -19,11 +19,11 @@ video {
 } */
 .majorFormat {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(7, 1fr);
+    grid-template-columns: max-content;
+    grid-template-rows: max-content;
 }
 .title { 
-    grid-area: 1 / 1 / 1 / 6; 
+    grid-area: 1 / 1 / 2 / 6; 
     padding-left: 2rem;
     color: var( --accent);
     /* border: 0;
