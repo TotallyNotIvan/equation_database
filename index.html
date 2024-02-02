@@ -15,13 +15,31 @@
     <body class="majorFormat">
       <div class="title">
         <h3>Equation_Database</h3>
-        <input type="text" placeholder="Search" class="minSearch">
+        <input type="text" placeholder="Search" class="minTools"><br>
+        <div class="moblieCheckboxSpacer">
+          <div>
+            <input type="checkbox" id="filterSearch" class="minTools">
+            <label for="filterSearch" >Filter Search</label>
+          </div>
+          <div>
+            <input type="checkbox" id="showVar" class="minTools">
+            <label for="showVar">Show Variables</label>
+          </div>
+          <div>
+            <input type="checkbox" id="showName" class="minTools">
+            <label for="showName">Show Name</label>
+          </div>
+        </div>
       </div>
       <div class="sidebar">
         <br>
         <input type="text" placeholder="Search"><br>
         <input type="checkbox" id="filterSearch">
-        <label for="filterSearch">Filter Search</label>
+        <label for="filterSearch">Filter Search</label><br>
+        <input type="checkbox" id="showVar">
+        <label for="showVar">Show Variables</label><br>
+        <input type="checkbox" id="showName">
+        <label for="showName">Show Name</label><br>
         <div>
           <h5>Subjects</h5>
           <input type="checkbox" id="thermodynamics">
@@ -36,17 +54,10 @@
           <input type="checkbox" id="time">
           <label for="time">Time</label><br>
         </div>
-        <div>
-          <h5>Print</h5>
-          <input type="checkbox" id="print">
-          <label for="pirnt">Print View</label><br>
-          <input type="checkbox" id="showVar">
-          <label for="showVar">Show Variables</label><br>
-          <input type="checkbox" id="showName">
-          <label for="showName">Show Name</label><br>
-          <input type="range" min="1" max="100" value="75" class="slider" id="printSize">
-          <p><u>Print</u></p>
-        </div>
+        <p></p>
+        <input type="checkbox" id="print">
+        <label for="pirnt">Print View</label><br>
+        <p><u>Print</u></p>
         <p><u>About</u></p>
         <p><u>Contact</u></p>
       </div>

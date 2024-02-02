@@ -83,21 +83,36 @@ input[type="text"]:focus {
 /* input[type="checkbox"] {
     cursor: pointer;
 } did not work */
+.title label{
+    color: var(--text);
+}
 @media screen and (min-width: 900px){
-    .minSearch{
+    .minTools{
         display: none;
     }
+    .title label{
+        font-size: 0;
+    }
+    /* problem: leaves extra space under title in desktop mode */
+
 }
 @media screen and (max-width: 1280px){
     .main{
         grid-template-columns: repeat(2, 1fr);
    }
+   input[type=text] {
+    width: 95%;
+   }
+   /* .title input[type=text] {
+    border-top:.15rem solid var( --dividers);
+   } */
 }
 @media screen and (max-width: 900px){
     .sidebar{
         display:none;
    }
    .main{
+        border: 0;
         grid-area: 2 / 1 / 8 / 6; 
    }
 }
@@ -109,3 +124,9 @@ input[type="text"]:focus {
         grid-template-columns: repeat(1, 1fr);
    }
 }
+.moblieCheckboxSpacer {
+    display: flex;
+    margin-right: 5%;
+    justify-content: space-between;
+}
+/* makes it so the chcekboxes under the moblie search is spread out */
