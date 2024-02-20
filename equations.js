@@ -1,11 +1,11 @@
-const MathJax = {
-  tex: {
-    inlineMath: [['$','$'],['\\(', '\\)']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
+// const MathJax = {
+//   tex: {
+//     inlineMath: [['$','$'],['\\(', '\\)']]
+//   },
+//   svg: {
+//     fontCache: 'global'
+//   }
+// };
 const data =
 [
     {
@@ -18,6 +18,13 @@ const data =
     {
       "name": "Pressure-Volume Work",
       "formula": "$$W=-P \\nabla V$$",
+      "extra": "W = Work<br>P = Pressure<br>V = Volume",
+      "variables": ["Work", "Pressure", "Volume"],
+      "subjects": ["Thermodynamics", "Chemistry"]
+    },
+    {
+      "name": "Example",
+      "formula": "$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}$$",
       "extra": "W = Work<br>P = Pressure<br>V = Volume",
       "variables": ["Work", "Pressure", "Volume"],
       "subjects": ["Thermodynamics", "Chemistry"]
