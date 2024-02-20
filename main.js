@@ -24,43 +24,43 @@ function unique(value, index, array) {
     return array.indexOf(value) === index
 };
 
-// function setVar() {
-//     let variables = [];
-//     data.forEach((equ) => {
-//         for (i = 0; i < equ.variables.length; i++) {
-//             variables.push(equ.variables[i]);
-//         }
-//     });
-//     variables.filter(unique);
-//     variables.sort()
+function setVar() {
+    let variables = [];
+    data.forEach((equ) => {
+        for (i = 0; i < equ.variables.length; i++) {
+            variables.push(equ.variables[i]);
+        }
+    });
+    variables.sort()
+    variables.filter(unique);
 
-//     const variableStore = document.querySelector("div.Variables");
-//     let varText = variableStore.innerHTML;
-//     variables.forEach((variable) => {
-//         varText += `<input type="checkbox" id="${variable}" subject=${variable}/>
-//         <label for="${variable}">${variable.charAt(0).toUpperCase() + variable.slice(1)}</label><br>\n`;
-//     });
-//     variableStore.innerHTML = varText;
-// };
+    const variableStore = document.querySelector("div.Variables");
+    let varText = variableStore.innerHTML;
+    variables.forEach((variable) => {
+        varText += `<input type="checkbox" id="${variable}" subject=${variable}/>
+        <label for="${variable}">${variable.charAt(0).toUpperCase() + variable.slice(1)}</label><br>\n`;
+    });
+    variableStore.innerHTML = varText;
+};
 
-// function setSub() { 
-//     let subs = [];
-//     data.forEach((equ) => {
-//         for (i = 0; i < equ.subjects.length; i++) {
-//             subs.push(equ.subjects[i]);
-//         }
-//     });
-//     subs.filter(unique);
-//     subs.sort()
+function setSub() { 
+    let subs = [];
+    data.forEach((equ) => {
+        for (i = 0; i < equ.subjects.length; i++) {
+            subs.push(equ.subjects[i]);
+        }
+    });
+    subs.filter(unique);
+    subs.sort()
 
-//     const subjectStore = document.querySelector("div.Subjects");
-//     let varText = subjectStore.innerHTML;
-//     subs.forEach((subject) => {
-//         varText += `<input type="checkbox" id="${subject}" value="${subject}"/>
-//         <label for="${subject.replaceAll(' ', '')}">${subject}</label><br>\n`;
-//     });
-//     subjectStore.innerHTML = varText;
-// }
+    const subjectStore = document.querySelector("div.Subjects");
+    let varText = subjectStore.innerHTML;
+    subs.forEach((subject) => {
+        varText += `<input type="checkbox" id="${subject}" value="${subject}"/>
+        <label for="${subject.replaceAll(' ', '')}">${subject}</label><br>\n`;
+    });
+    subjectStore.innerHTML = varText;
+}
 
 function loadAll() {
     for (i = data.length; i > 0; i--) {

@@ -21,14 +21,15 @@ const data =
       "extra": "W = Work<br>P = Pressure<br>V = Volume",
       "variables": ["Work", "Pressure", "Volume"],
       "subjects": ["Thermodynamics", "Chemistry"]
-    },
-    {
-      "name": "Example",
-      "formula": "$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}$$",
-      "extra": "W = Work<br>P = Pressure<br>V = Volume",
-      "variables": ["Work", "Pressure", "Volume"],
-      "subjects": ["Thermodynamics", "Chemistry"]
     }
+    // ,
+    // {
+    //   "name": "Example",
+    //   "formula": "$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}$$",
+    //   "extra": "W = Work<br>P = Pressure<br>V = Volume",
+    //   "variables": ["Work", "Pressure", "Volume"],
+    //   "subjects": ["Thermodynamics", "Chemistry"]
+    // }
 ];
 
 // const variables = 
