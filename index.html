@@ -7,10 +7,11 @@
         <link rel="stylesheet" href="other/modnorm.min.css">
         <link rel="stylesheet" href="simple.css">
         <link rel="stylesheet" href="style.css">
-        <!-- <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script> -->
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
         <!-- seems to work without this part, i think it came with teh MathJax script -->
-        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-        <script src="main.js"></script>
+        <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script src="equations.js"></script>
+        <script src="main.js" defer></script> 
     </head>
     <body class="majorFormat">
       <div class="title">
@@ -40,19 +41,13 @@
         <label for="showVar">Show Variables</label><br>
         <input type="checkbox" id="showName">
         <label for="showName">Show Name</label><br>
-        <div>
+        <div class="Subjects">
           <h5>Subjects</h5>
-          <input type="checkbox" id="thermodynamics">
-          <label for="thermodynamics">Thermodynamics</label><br>
-          <input type="checkbox" id="fluidMechanics">
-          <label for="fluidMechanics">Fluid Mechanics</label><br>
+
         </div>
-        <div>
+        <div class="Variables">
           <h5>Variables</h5>
-          <input type="checkbox" id="velocity">
-          <label for="velocity">Velocity</label><br>
-          <input type="checkbox" id="time">
-          <label for="time">Time</label><br>
+
         </div>
         <p></p>
         <input type="checkbox" id="print">
@@ -62,24 +57,7 @@
         <p><u>Contact</u></p>
       </div>
       <div class="main">
-        <div class="equ">
-          <span>Quadratic Formula</span>
-          <h4>$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}$$</h4>
-          <span>x	=	Unknown</span>
-          <span>a, b, c	=	Constant</span>
-        </div>
-        <div class="equ">
-          <span>Pressure-Volume Work</span>
-          <h4>$$W=-P \nabla V$$</h4>
-          <!-- <span>$$W$$ = Work</span> -->
-          <span>W = Work</span>
-          <span>P = Pressure</span>
-          <span>V = Volume</span>
-        </div>
-        <div class="equ">
-          <span>Quadratic Formula</span>
-          <h4>$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}$$</h4>
-          <span>x	=	Unknown</span>
-          <span>a, b, c	=	Constant</span>
+
+      </div>
     </body>
 </html>
